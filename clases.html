@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>This is the HOMEPAGE. | SCAEupt App </title>
+      <title> | SCAEupt App </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="This is the HOMEPAGE. | SCAEupt App ">
+      <meta name="title" content=" | SCAEupt App ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="">
       
       
-      <meta name="docfx:docurl" content="https://github.com/UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/blob/main/WebApp/index.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/blob/main/WebApp/clases.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -71,18 +71,80 @@
         </div>
 
         <article data-uid="">
-<h1 id="this-is-the-homepage">This is the <strong>HOMEPAGE</strong>.</h1>
 
-<h2 id="reporte-cobertura-html"><a href="Cobertura/index.html">Reporte Cobertura HTML</a></h2>
-<h2 id="reporte-cobertura-markdown"><a href="Cobertura/SummaryGithub.html">Reporte Cobertura Markdown</a></h2>
-<h2 id="reporte-de-mutaciones"><a href="Stryker/mutation-report.html">Reporte de Mutaciones</a></h2>
-<h2 id="documentacion-de-clases-atributos-y-métodos"><a href="docs/pyWeb_ScaeUPT.html">Documentacion de Clases, atributos y métodos</a></h2>
-<h2 id="diagrama-de-clases"><a href="clases.html">Diagrama de Clases</a></h2>
+<pre><code class="lang-mermaid">classDiagram
+
+class clsNegocioRegistro
+clsNegocioRegistro : +MtdGuardarIngresoUpetino() Boolean
+clsNegocioRegistro : +MtdGuardarSalidaUpetino() Boolean
+clsNegocioRegistro : +ListaRegistro() DataTable
+clsNegocioRegistro : +MtdBuscarRegistro() DataTable
+clsNegocioRegistro : +MtdBuscarPersonaPorDNI() DataTable
+clsNegocioRegistro : +MtdCompararToken() Boolean
+clsNegocioRegistro : +MtdEliminarToken() Void
+
+class clsNegocioRegistroVisitante
+clsNegocioRegistroVisitante : +ListaRegistroVisitante() DataTable
+clsNegocioRegistroVisitante : +MtdBuscarRegistroVisitante() DataTable
+clsNegocioRegistroVisitante : +MtdGuardarIngresoVisitante() Boolean
+clsNegocioRegistroVisitante : +MtdGuardarSalidaVisitante() Boolean
+
+class clsNegocioUsuario
+clsNegocioUsuario : +MtdIniciarSesionToken() DataTable
+clsNegocioUsuario : +MtdIniciarSesionOficina() DataTable
+
+class clsNegocioUsuarioRegistro
+clsNegocioUsuarioRegistro : +MtdGuardarIngreso() Boolean
+clsNegocioUsuarioRegistro : +MtdGuardarSalida() Boolean
+
+class clsNegocioVisitante
+clsNegocioVisitante : +MtdGuardarVisitante() Boolean
+clsNegocioVisitante : +MtdBuscarVisitante() DataTable
+clsNegocioVisitante : +ConsultarDNI() Task~String[]~
+clsNegocioVisitante : +ConsultarCarnetExtranjeria() Task~String[]~
+
+class clsEntidadRegistro
+clsEntidadRegistro : +Int ID_registro
+clsEntidadRegistro : +String DNI
+clsEntidadRegistro : +Nullable~DateTime~ FechaHora_Ingreso
+clsEntidadRegistro : +Nullable~DateTime~ FechaHora_Salida
+clsEntidadRegistro : +String IDUsuario_Ingreso
+clsEntidadRegistro : +String IDUsuario_Salida
+clsEntidadRegistro : +String TipoEntrada
+
+class clsEntidadRegistroVisitante
+clsEntidadRegistroVisitante : +Int ID_registro
+clsEntidadRegistroVisitante : +String DNI
+clsEntidadRegistroVisitante : +Nullable~DateTime~ FechaHora_Ingreso
+clsEntidadRegistroVisitante : +Nullable~DateTime~ FechaHora_Salida
+clsEntidadRegistroVisitante : +String IDUsuario_Ingreso
+clsEntidadRegistroVisitante : +String IDUsuario_Salida
+
+class clsEntidadUsuarioRegistro
+clsEntidadUsuarioRegistro : +Int ID_registro
+clsEntidadUsuarioRegistro : +String ID_Empleado
+clsEntidadUsuarioRegistro : +Nullable~DateTime~ FechaHora_Ingreso
+clsEntidadUsuarioRegistro : +Nullable~DateTime~ FechaHora_Salida
+clsEntidadUsuarioRegistro : +String TipoEntrada
+clsEntidadUsuarioRegistro : +Nullable~TimeSpan~ TiempoTardanza
+
+class clsEntidadVisitante
+clsEntidadVisitante : +String DNI
+clsEntidadVisitante : +String Nombre
+clsEntidadVisitante : +String Apellido
+clsEntidadVisitante : +String Telefono
+
+class clsConfigConexion
+clsConfigConexion : +GetConnection() MySqlConnection
+
+
+
+</code></pre>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/blob/main/WebApp/index.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/blob/main/WebApp/clases.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
