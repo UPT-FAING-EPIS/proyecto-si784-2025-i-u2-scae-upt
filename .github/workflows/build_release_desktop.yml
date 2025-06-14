@@ -1,0 +1,68 @@
+name: Build and Create Installer
+
+on:
+  push:
+    tags:
+      - 'v*'  # Se activa al hacer push de un tag como v1.0.0
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Get tag name
+      id: get_tag
+      run: echo "TAG_NAME=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
+
+    - name: Setup MSBuild
+      uses: microsoft/setup-msbuild@v1.1
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.2
+
+    - name: Restore NuGet packages
+      run: nuget restore DesktopApp/SCAE-UPT.sln
+
+    - name: Build Solution
+      run: msbuild DesktopApp/SCAE-UPT.sln /p:Configuration=Release
+
+    - name: Descargar Inno Setup
+      run: |
+        curl -L -o is.exe "https://jrsoftware.org/download.php/is.exe"
+        Start-Process -Wait -FilePath ".\is.exe" -ArgumentList "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-"
+
+    - name: Add Inno Setup to PATH
+      run: echo "C:\Program Files (x86)\Inno Setup 6" | Out-File -Append -Encoding ascii $env:GITHUB_PATH
+
+    - name: Build Inno Setup Installer
+      run: iscc DesktopApp\SCAE-UPT.Installer\SCAE-UPT.iss
+
+    - name: Commit del instalador en releases/{tag} a la rama release-artifacts
+      run: |
+        git config user.name "github-actions"
+        git config user.email "github-actions@github.com"
+        git fetch origin
+        git checkout -B release-artifacts origin/release-artifacts || git checkout -b release-artifacts
+    
+        $releasePath = "releases/${{ env.TAG_NAME }}"
+        if (!(Test-Path $releasePath)) {
+          New-Item -ItemType Directory -Path $releasePath -Force | Out-Null
+        }
+    
+        Copy-Item -Path DesktopApp\SCAE-UPT.Installer\Output\*.exe -Destination $releasePath -Force
+    
+        git add $releasePath
+        git commit -m "Agregar instalador para la versión ${{ env.TAG_NAME }}" || echo "Nada que commitear"
+        git push origin release-artifacts
+
+    - name: Subir instalador como GitHub Release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: ${{ env.TAG_NAME }}
+        name: Versión ${{ env.TAG_NAME }}
+        files: releases/${{ env.TAG_NAME }}/*.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

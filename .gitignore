@@ -1,2 +1,4 @@
 **/.env
 **/appsettings.Development.json
+/DesktopApp/pyDesktop_ScaeUPT/bin/
+/DesktopApp/pyDesktop_ScaeUPT/obj/

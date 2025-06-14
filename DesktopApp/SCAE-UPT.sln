@@ -1,0 +1,24 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SCAE-UPT", "pyDesktop_ScaeUPT\SCAE-UPT.csproj", "{28C3B992-8647-4BAB-9CEE-BA47A5D5ADB5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28C3B992-8647-4BAB-9CEE-BA47A5D5ADB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28C3B992-8647-4BAB-9CEE-BA47A5D5ADB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28C3B992-8647-4BAB-9CEE-BA47A5D5ADB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28C3B992-8647-4BAB-9CEE-BA47A5D5ADB5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D1ADB94-9CA3-4FFC-A5EC-5D10BC155C40}
+	EndGlobalSection
+EndGlobal

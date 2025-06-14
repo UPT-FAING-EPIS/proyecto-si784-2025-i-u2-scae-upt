@@ -159,6 +159,8 @@ jobs:
         ## [Reporte Snyk](ReporteSnyk/index.html)
 
         ## [Reporte Semgrep](ReporteSemgrep/index.html)
+
+        ## [Reporte Infracost](ReporteInfracost/infracost-report.md)
         EOF
     - name: Generar documentación
       run: |
