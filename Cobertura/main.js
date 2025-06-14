@@ -213,13 +213,13 @@ var assemblies = [
   {
     "name": "pyWeb_ScaeUPT",
     "classes": [
-      { "name": "pyWeb_ScaeUPT.Controllers.AuthController", "rp": "pyWeb_ScaeUPT_AuthController.html", "cl": 197, "ucl": 26, "cal": 223, "tl": 354, "cb": 44, "tb": 64, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "pyWeb_ScaeUPT.Controllers.GoogleAuthRequest", "rp": "pyWeb_ScaeUPT_GoogleAuthRequest.html", "cl": 4, "ucl": 0, "cal": 4, "tl": 359, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "pyWeb_ScaeUPT.Controllers.GoogleTokenPayload", "rp": "pyWeb_ScaeUPT_GoogleTokenPayload.html", "cl": 26, "ucl": 3, "cal": 29, "tl": 375, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "pyWeb_ScaeUPT.Controllers.HomeController", "rp": "pyWeb_ScaeUPT_HomeController.html", "cl": 227, "ucl": 114, "cal": 341, "tl": 530, "cb": 27, "tb": 46, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "pyWeb_ScaeUPT.Data.ApplicationDbContext", "rp": "pyWeb_ScaeUPT_ApplicationDbContext.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 34, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "pyWeb_ScaeUPT.Models.estudianteModel", "rp": "pyWeb_ScaeUPT_estudianteModel.html", "cl": 10, "ucl": 0, "cal": 10, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "pyWeb_ScaeUPT.Models.tokenModel", "rp": "pyWeb_ScaeUPT_tokenModel.html", "cl": 6, "ucl": 0, "cal": 6, "tl": 29, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Controllers.AuthController", "rp": "pyWeb_ScaeUPT_AuthController.html", "cl": 273, "ucl": 39, "cal": 312, "tl": 519, "cb": 55, "tb": 80, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Controllers.GoogleAuthRequest", "rp": "pyWeb_ScaeUPT_GoogleAuthRequest.html", "cl": 5, "ucl": 0, "cal": 5, "tl": 529, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Controllers.GoogleTokenPayload", "rp": "pyWeb_ScaeUPT_GoogleTokenPayload.html", "cl": 35, "ucl": 6, "cal": 41, "tl": 561, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Controllers.HomeController", "rp": "pyWeb_ScaeUPT_HomeController.html", "cl": 328, "ucl": 165, "cal": 493, "tl": 794, "cb": 48, "tb": 68, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Data.ApplicationDbContext", "rp": "pyWeb_ScaeUPT_ApplicationDbContext.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 50, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Models.estudianteModel", "rp": "pyWeb_ScaeUPT_estudianteModel.html", "cl": 15, "ucl": 0, "cal": 15, "tl": 43, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "pyWeb_ScaeUPT.Models.tokenModel", "rp": "pyWeb_ScaeUPT_tokenModel.html", "cl": 9, "ucl": 0, "cal": 9, "tl": 43, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
