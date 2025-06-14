@@ -2,7 +2,7 @@
 
 > **Project:** `UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/terraform/plan.json`  
 > **Total Monthly Cost:** **`$5.00`**  
-> **Generated:** `2025-06-14 10:04:03`
+> **Generated:** `2025-06-14 10:14:56`
 
 ## 📊 Detailed Breakdown
 
@@ -35,9 +35,9 @@ Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/t
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛
 ```
 
-## 📈 Cost Analysis
+# ## 📈 Cost Analysis
 
->  └─ Build vCPU                    Monthly cost depends on usage: $0.0001 per seconds     
+# >  └─ Build vCPU                    Monthly cost depends on usage: $0.0001 per seconds     
 >                                                                                          
 >  azurerm_service_plan.main                                                               
 >  └─ Instance usage (F1)                        730  hours                        $0.00   
@@ -61,7 +61,7 @@ Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/t
 
 - **Tool:** Infracost `v0.10.41`
 - **Format:** Infrastructure as Code cost estimation
-- **Timestamp:** `2025-06-14T10:04:03Z`
+- **Timestamp:** `2025-06-14T10:14:56Z`
 
 </details>
 
@@ -71,7 +71,7 @@ Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/t
 
 | 🏷️ Resource | 💵 Monthly Cost |
 |-------------|------------------|
-| MySQL Database (Elestika) | **$2.78** |
+| MySQL Database (Elastika) | **$2.78** |
 
 > **Note:** These are additional costs not tracked by Terraform but included in the total infrastructure budget.
 
