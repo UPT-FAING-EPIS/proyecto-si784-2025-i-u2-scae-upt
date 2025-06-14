@@ -39,6 +39,7 @@ jobs:
 
       - name: Terraform Init (con backend)
         run: |
+          cd terraform
           terraform init \
             -backend-config="resource_group_name=terraform-state-rg" \
             -backend-config="storage_account_name=tfstatescaeupt" \
