@@ -61,7 +61,12 @@ jobs:
             -out=tfplan.binary
 
           terraform show -json tfplan.binary > plan.json
-
+      - name: Install Infracost
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
+          echo "$HOME/.infracost/bin" >> $GITHUB_PATH
+      - name: Check Infracost version
+        run: infracost --version
       - name: Generate Infracost Estimate
         run: |
           infracost breakdown \
