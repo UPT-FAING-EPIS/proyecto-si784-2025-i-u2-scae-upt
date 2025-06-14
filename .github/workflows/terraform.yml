@@ -7,24 +7,37 @@ on:
 
 jobs:
   infracost:
-    name: Infracost Estimación de Costos
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: WebApp/pyWeb_ScaeUPT/terraform
+        working-directory: terraform
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Terraform
+      - name: Azure Login
+        run: |
+          az login --service-principal \
+            --username "${{ secrets.AZURE_CLIENT_ID }}" \
+            --password "${{ secrets.AZURE_CLIENT_SECRET }}" \
+            --tenant "${{ secrets.AZURE_TENANT_ID }}"
+          az account set --subscription "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+
+      - name: Get Storage Key
+        run: |
+          STORAGE_KEY=$(az storage account keys list \
+            --resource-group terraform-state-rg \
+            --account-name tfstatescaeupt \
+            --subscription "${{ secrets.AZURE_SUBSCRIPTION_ID }}" \
+            --query '[0].value' -o tsv)
+          echo "STORAGE_KEY=$STORAGE_KEY" >> $GITHUB_ENV
+
+      - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
         with:
           terraform_version: 1.5.0
 
-      - name: Setup Infracost
-        uses: infracost/actions/setup@v2
-
-      - name: Terraform Init
+      - name: Terraform Init (con backend)
         run: |
           terraform init \
             -backend-config="resource_group_name=terraform-state-rg" \
