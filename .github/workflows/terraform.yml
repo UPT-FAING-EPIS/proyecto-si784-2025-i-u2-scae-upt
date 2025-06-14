@@ -26,7 +26,12 @@ jobs:
 
       - name: Terraform Init
         run: |
-          terraform init -backend=false
+          terraform init \
+            -backend-config="resource_group_name=terraform-state-rg" \
+            -backend-config="storage_account_name=tfstatescaeupt" \
+            -backend-config="container_name=tfstate" \
+            -backend-config="key=terraform.tfstate" \
+            -backend-config="access_key=${{ env.STORAGE_KEY }}"
 
       - name: Terraform Plan JSON
         run: |
@@ -57,6 +62,7 @@ jobs:
     defaults:
       run:
         working-directory: WebApp/pyWeb_ScaeUPT
+    needs: infracost
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
