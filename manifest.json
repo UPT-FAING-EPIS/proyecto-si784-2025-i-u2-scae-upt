@@ -242,6 +242,48 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "docs/pyWeb_ScaeUPT.Tests.Features.GeneracionDeCodigoQRParaEstudiantesFeature.FixtureData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pyWeb_ScaeUPT.Tests.Features.GeneracionDeCodigoQRParaEstudiantesFeature.FixtureData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "pyWeb_ScaeUPT.Tests.Features.GeneracionDeCodigoQRParaEstudiantesFeature.FixtureData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/pyWeb_ScaeUPT.Tests.Features.GeneracionDeCodigoQRParaEstudiantesFeature.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pyWeb_ScaeUPT.Tests.Features.GeneracionDeCodigoQRParaEstudiantesFeature.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "pyWeb_ScaeUPT.Tests.Features.GeneracionDeCodigoQRParaEstudiantesFeature",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/pyWeb_ScaeUPT.Tests.Features.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pyWeb_ScaeUPT.Tests.Features.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "pyWeb_ScaeUPT.Tests.Features",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "docs/pyWeb_ScaeUPT.Tests.Integration.IntegrationTests.yml",
       "output": {
         ".html": {
@@ -294,6 +336,34 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "pyWeb_ScaeUPT.Tests.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/pyWeb_ScaeUPT.Tests.Steps.GeneracionCodigoQRSteps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pyWeb_ScaeUPT.Tests.Steps.GeneracionCodigoQRSteps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "pyWeb_ScaeUPT.Tests.Steps.GeneracionCodigoQRSteps",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docs/pyWeb_ScaeUPT.Tests.Steps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/pyWeb_ScaeUPT.Tests.Steps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "pyWeb_ScaeUPT.Tests.Steps",
       "Summary": null
     },
     {
