@@ -67,14 +67,28 @@ jobs:
           echo "$HOME/.infracost/bin" >> $GITHUB_PATH
       - name: Check Infracost version
         run: infracost --version
-      - name: Generate Infracost Estimate
+      - name: Generate Infracost Markdown Report
         run: |
           infracost breakdown \
             --path=plan.json \
-            --format=table \
+            --format=markdown \
+            --out-file=infracost-report.md \
             --usage-file=infracost-usage.yml || echo "Archivo de uso opcional no presente"
         env:
           INFRACOST_API_KEY: ${{ secrets.INFRACOST_API_KEY }}
+      - name: Agregar costo manual de MySQL Elestika
+        run: |
+          echo -e "\n## Costos adicionales manuales\n" >> infracost-report.md
+          echo "| Recurso | Costo mensual |" >> infracost-report.md
+          echo "|---------|----------------|" >> infracost-report.md
+          echo "| Base de Datos MySQL en Elestika | \$2.78 |" >> infracost-report.md
+      - run: mkdir -p ReporteInfracost && cp infracost-report.md ReporteInfracost/
+      - name: Deploy Infracost Markdown
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ReporteInfracost
+          keep_files: true
   deploy:
     runs-on: ubuntu-latest
     defaults:
