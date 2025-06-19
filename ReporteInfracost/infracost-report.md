@@ -1,8 +1,8 @@
 # 💰 Infrastructure Cost Report
 
 > **Project:** `UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/terraform/plan.json`  
-> **Total Monthly Cost:** **`$5.00`**  
-> **Generated:** `2025-06-14 14:13:26`
+> **Total Monthly Cost:** **`$29.82`**  
+> **Generated:** `2025-06-19 18:34:00`
 
 ## 📊 Detailed Breakdown
 
@@ -10,6 +10,9 @@
 Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/terraform/plan.json
 
  Name                                  Monthly Qty  Unit                  Monthly Cost   
+                                                                                         
+ azurerm_service_plan.python                                                             
+ └─ Instance usage (B2)                        730  hours                       $24.82   
                                                                                          
  azurerm_container_registry.main                                                         
  ├─ Registry usage (Basic)                      30  days                         $5.00   
@@ -19,19 +22,19 @@ Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/t
  azurerm_service_plan.main                                                               
  └─ Instance usage (F1)                        730  hours                        $0.00   
                                                                                          
- OVERALL TOTAL                                                                  $5.00 
+ OVERALL TOTAL                                                                 $29.82 
 
 *Usage costs were estimated using infracost-usage.yml, see docs for other options.
 
 ──────────────────────────────────
-4 cloud resources were detected:
-∙ 2 were estimated
-∙ 2 were free
+6 cloud resources were detected:
+∙ 3 were estimated
+∙ 3 were free
 
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 ┃ Project                                                          ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
 ┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━┫
-┃ UPT-FAING-EPIS/proyecto-si784-2...eb_ScaeUPT/terraform/plan.json ┃            $5 ┃       $0.00 ┃         $5 ┃
+┃ UPT-FAING-EPIS/proyecto-si784-2...eb_ScaeUPT/terraform/plan.json ┃           $30 ┃       $0.00 ┃        $30 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛
 ```
 
@@ -42,14 +45,14 @@ Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/t
 >  azurerm_service_plan.main                                                               
 >  └─ Instance usage (F1)                        730  hours                        $0.00   
 >                                                                                          
->  OVERALL TOTAL                                                                  $5.00 
+>  OVERALL TOTAL                                                                 $29.82 
 > 
 > *Usage costs were estimated using infracost-usage.yml, see docs for other options.
 > 
 > ──────────────────────────────────
-> 4 cloud resources were detected:
-> ∙ 2 were estimated
-> ∙ 2 were free
+> 6 cloud resources were detected:
+> ∙ 3 were estimated
+> ∙ 3 were free
 > 
 > ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
 > ┃ Project                                                          ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
@@ -61,7 +64,7 @@ Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/t
 
 - **Tool:** Infracost `v0.10.41`
 - **Format:** Infrastructure as Code cost estimation
-- **Timestamp:** `2025-06-14T14:13:26Z`
+- **Timestamp:** `2025-06-19T18:34:00Z`
 
 </details>
 
