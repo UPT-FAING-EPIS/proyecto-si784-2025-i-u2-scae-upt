@@ -1,13 +1,13 @@
 # 💰 Infrastructure Cost Report
 
-> **Project:** `plan.json`  
+> **Project:** `UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/terraform/plan.json`  
 > **Total Monthly Cost:** **`$29.82`**  
-> **Generated:** `2025-06-21 05:54:05`
+> **Generated:** `2025-06-28 15:47:40`
 
 ## 📊 Detailed Breakdown
 
 ```
-Project: plan.json
+Project: UPT-FAING-EPIS/proyecto-si784-2025-i-u2-scae-upt/WebApp/pyWeb_ScaeUPT/terraform/plan.json
 
  Name                                  Monthly Qty  Unit                  Monthly Cost   
                                                                                          
@@ -31,11 +31,11 @@ Project: plan.json
 ∙ 3 were estimated
 ∙ 3 were free
 
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
-┃ Project                                            ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
-┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━┫
-┃ plan.json                                          ┃           $30 ┃       $0.00 ┃        $30 ┃
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+┃ Project                                                          ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━┫
+┃ UPT-FAING-EPIS/proyecto-si784-2...eb_ScaeUPT/terraform/plan.json ┃           $30 ┃       $0.00 ┃        $30 ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━┛
 ```
 
 # ## 📈 Cost Analysis
@@ -54,8 +54,8 @@ Project: plan.json
 > ∙ 3 were estimated
 > ∙ 3 were free
 > 
-> ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
-> ┃ Project                                            ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
+> ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━┓
+> ┃ Project                                                          ┃ Baseline cost ┃ Usage cost* ┃ Total cost ┃
 
 ---
 
@@ -64,7 +64,7 @@ Project: plan.json
 
 - **Tool:** Infracost `v0.10.41`
 - **Format:** Infrastructure as Code cost estimation
-- **Timestamp:** `2025-06-21T05:54:06Z`
+- **Timestamp:** `2025-06-28T15:47:40Z`
 
 </details>
 
